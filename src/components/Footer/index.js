@@ -1,6 +1,7 @@
 import { H1 } from "../../theme/typography";
 import { Container } from "../../theme/layout";
 import { StyledFooter, FooterContent, Links, Link, FooterText } from "./styled";
+import Resume from "../../documents/MacKenzieKerwin.pdf";
 
 const Footer = () => (
   <StyledFooter>
@@ -8,7 +9,9 @@ const Footer = () => (
       <H1>Let's keep in touch!</H1>
       <FooterContent>
         <Links>
-          <Link href="#">Resume</Link>
+          <Link href={Resume} target="_blank">
+            Resume
+          </Link>
           <Link
             href="https://www.linkedin.com/in/mackenzie-kerwin/"
             target="_blank">
