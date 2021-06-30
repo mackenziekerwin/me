@@ -1,0 +1,148 @@
+{
+  "batl": {
+    "isCaseStudy": true,
+    "heroAlt": "A collection of desktop- and mobile-sized screenshots of the BATL site.",
+    "title": "BATL",
+    "dates": "September–December 2020",
+    "description": "As a member of Scout Studio, Northeastern University's student-led design organization, I participated in a brand redesign and developed a marketing site for BATL, the university-affiliated Biopharmaceutical Analysis Training Laboratory.",
+    "role": "Working alongside four designers, I was one of three developers whose main responsibilities included architecting, developing, and deploying the final marketing site.",
+    "tools": ["Figma", "React", "Gatsby", "Bootstrap", "Contentful", "Netlify"],
+    "challenge": "BATL has come a long way since its founding in 2014. Originally a training resource for Northeastern University, the organization has grown beyond its emphasis on experiential learning and gained traction in research and global partnerships. BATL needed a new brand to communicate its mission and legitimacy to a wide audience within academia, research, and industry. At the same time, the organization wanted to establish an identity independent from Northeastern. As BATL anticipated a new wave of growth, there was clear need for an informative, adaptable site to follow along their journey.",
+    "solution": [
+      {
+        "type": "paragraph",
+        "text": "BATL's new brand was established in an illustrative, interactive marketing site with a custom design system to display their story, their values, and their work. As a developer, my main concern revolved around tying the visual and structural components of the site to the raw content supplied by the client."
+      },
+      {
+        "type": "paragraph",
+        "text": "To allow easy editing of the site without touching any code, we set up a space for content using the Contentful CMS. Our early development work consisted of thinking through the content model—an outline of the different types of reusable visual components—such as sections, headers, and buttons—as well as information about where they live, what they intend to communicate, and what kinds of data they require. This content model provided a clear mapping between the raw content in the CMS and the visual rendering of it on the site, and it allowed our clients to swap out text and, in some sections, add, remove, and update items."
+      },
+      {
+        "type": "image",
+        "src": "contentModel",
+        "alt": "A screenshot of a document titled \"Content Model\" including a table titled \"Who We Are\" containing columns referencing sections of a page and their corresponding reusable components.",
+        "caption": "We kept track of our reusable components and which sections they would be used for in a table for each page of the site."
+      },
+      {
+        "type": "paragraph",
+        "text": "On top of this, our site contained a system of styled React components that fetched content from the CMS. Creating a set of generalized components allowed us to reuse visual blocks across pages, essentially cutting down on development work and reinforcing a cohesive visual identity. The result was a striking yet intuitive interface that communicated custom information as well as a strong central brand."
+      },
+      {
+        "type": "image",
+        "src": "home",
+        "alt": "A screenshot of BATL's home page, which includes a navigation bar, a full-screen image of a laboratory, and a heading that reads \"Education, Research, Partnerships.\"",
+        "caption": "The home page of our final site."
+      }
+    ],
+    "takeaways": {
+      "intro": "This was my first large-scale development project to produce a live marketing site. I got exposure to several technologies and gained some insights to keep in mind for next time.",
+      "themes": [
+        {
+          "theme": "Communication",
+          "description": "I had never worked with a client prior to this experience, and I learned very quickly the importance of communication as we determined the goals of the new brand. Struggles with communication can lead to misunderstandings of shared objectives and back and forth between design and development as content gets reorganized and restructured."
+        },
+        { "theme": "Content modeling",
+          "description": "It was a priority for this site to be maintainable (i.e. editable), but we anticipated very few changes in the overall structure and layout. We the site to allow some sections to be omitted, but each page ultimately had a defined order and amount of sections. Future projects may require a more abstract approach to allow sections and even smaller components like headers, images, and buttons to be added and removed ad hoc."
+        },
+        { "theme": "Consistency & efficiency",
+          "description": "Projects of this size can get real messy, real fast. It was important to ensure code written at every step of the process was clearly documented and worked efficiently. Additionally, as a team of three, it was necessary to establish a set of code standards to ensure consistency across all components."
+        }
+      ]
+    },
+    "cta": {
+      "text": "See the live site",
+      "src": "https://batl.cos.northeastern.edu/"
+    }
+  },
+  "greenhouse": {
+    "isCaseStudy": true,
+    "heroAlt": "A collection of desktop- and mobile-sized screenshots of the GreenHouse prototype.",
+    "title": "GreenHouse",
+    "dates": "September–December 2020",
+    "description": "An exploration of interaction design, this project consisted of a responsive prototype for a personalized carbon footprint tracker.",
+    "role": "As this was a solo project, I completed all parts of the process including research and discovery, ideating, and designing.",
+    "tools": ["Figma"],
+    "challenge": "To individuals who care about the climate crisis and its effects on the environment, taking steps to reduce one's carbon footprint can seem overwhelming. While one person alone can't solve global warming, there's great potential in the idea that personalized tracking and custom tools can motivate an individual to achieve a small impact.",
+    "solution": [
+      {
+        "type": "paragraph",
+        "text": "To come up with a solution, I imagined a tool that users could take with them to record small acts of sustainable thinking and eventually see how their carbon savings add up. I started with one workflow in which a user logged a single action—biking five miles to work—and saw two graphics: a chart displaying the amount of carbon emissions saved and a leaderboard of friends."
+      },
+      {
+        "type": "image",
+        "src": "sketch",
+        "alt": "A handdrawn, comic-style sketch of a 6-frame workflow of a carbon footprint visualizer.",
+        "caption": "The initial project sketch of the original idea."
+      },
+      {
+        "type": "paragraph",
+        "text": "Through more research and discovery, I determined additional functionalities that the prototype could include. An initial interview revealed that lack of knowledge—in addition to lack of motivation—contributes to the feeling of helplessness when it comes to making sustainable choices. To address this, I imagined a social component of the application that allowed users to post and browse articles, opinions, and other information to assist learning. I also found through background research of competitor products that gamification helps to motivate users, and so I came up with the idea of challenges in which users could compete with their friends."
+      },
+      {
+        "type": "paragraph",
+        "text": "Once I had determined the core functionalities, I diagrammed a sitemap to map out where everything would live. Here, I explored the idea of a lifestyle quiz on the home page to engage first-time users and eventually urge them to sign up for an account. Outlining the pages and their relationships like this helped me conceptualize the different experiences between logged-in and logged-out users and aided the transition into wireframing."
+      },
+      {
+        "type": "image",
+        "src": "sitemap",
+        "alt": "A flowchart representing a sitemap where every node is a page of the site, and arrows between nodes represent navigation links.",
+        "caption": "The finalized sitemap, including flows for both logged-in and anonymous users."
+      },
+      {
+        "type": "paragraph",
+        "text": "After creating low-fidelity wireframes, I played around with fonts and colors to establish a clear design system. I wanted to keep the brand clean and minimal to echo the motivation for clean habits, and thus fonts and color schemes were simple. Choosing green as the primary accent felt like an obvious choice. Finally, I chose graphics that used a consistent color system, felt cheery and optimistic, and depicted scenes of individuals caring for the environment."
+      },
+      {
+        "type": "image",
+        "src": "typeSystem",
+        "alt": "A document containing a sample heading, subheading, paragraph, caption, and button, as well as font family, size, and leading information for each style.",
+        "caption": "The final desktop font styles."
+      },
+      {
+        "type": "paragraph",
+        "text": "This design system made the transition from low- to high-fidelity wireframes a smooth one. In the final version, I made two iterations—one desktop and one mobile—of three workflows."
+      },
+      {
+        "type": "image",
+        "src": "home",
+        "alt": "A screenshot of the desktop landing page, including a brightly-colored flat illustration of a woman cleaning pollution from a pond, a heading that reads, \"It's time to clean up our act\", and a paragraph calling for action.",
+        "caption": "The final landing page of the prototype."
+      }
+    ],
+    "takeaways": {
+      "intro": "In addition to prototyping, this project gave me exposure to many components of the research and discovery processes of design.",
+      "themes": [
+        {
+          "theme": "Responsive design",
+          "description": "When adapting from desktop to mobile, it is important to consider scale and layout to ensure that components are resized to be proportional but still readable."
+        },
+        {
+          "theme": "Accessibility",
+          "description": "Something I would like to focus on more in my next project is accessibility. In this project, I considered elements like contrast ratio and minimum text size, but I hope to work on more designs that center around accessibility guidelines."
+        }
+      ]
+    },
+    "cta": {
+      "text": "See the final prototype",
+      "src": "https://www.figma.com/proto/Kt06BXwEv0ZcUmE3XAWxUB/Hi-Fis-Desktop?node-id=1%3A7&viewport=202%2C150%2C0.07988958805799484&scaling=scale-down-width&hotspot-hints=0"
+    }
+  },
+  "spot": {
+    "isCaseStudy": false,
+    "heroAlt": "A screenshot of an ER diagram containing database entities and their relationships.",
+    "title": "Spot!",
+    "dates": "September–December 2020",
+    "description": "This project was a proof-of-concept application designed to help dog lovers compete in \"dogspotting,\" a popular activity on social media in which users can gain points by posting pictures of dogs they meet in public.",
+    "role": "I worked on a team of three students to design and diagram the database, and I was the engineer of the proof of concept.",
+    "tools": ["MySQL", "Python", "Express", "React"]
+  },
+  "google-doodle": {
+    "isCaseStudy": false,
+    "heroAlt": "A screenshot of the application, which consists of an illustration of the word \"Google\" written in calligraphy and a play button, shuffle button, and information button.",
+    "title": "Google Doodle",
+    "dates": "September–December 2019",
+    "description": "This single-page application is my take on a Google Doodle that would be displayed on the search engine for World Calligraphy day. It uses D3.js and stroke animations to simulate a calligraphy tutorial.",
+    "role": "I was the sole designer and developer of the application.",
+    "tools": ["D3.js", "HTML", "CSS", "Adobe Illustrator"]
+  }
+}
