@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useParams } from "react-router-dom";
 
 import { Container, Row, Col8, Col9 } from "../../theme/layout";
@@ -9,6 +9,8 @@ import Contents from "../../components/Contents";
 import CaptionedImage from "../../components/CaptionedImage";
 import Button from "../../components/Button";
 
+import NotFound from "../../pages/NotFound";
+
 import images from "../../images";
 
 import { Hero, Title, Heading, Paragraph, ButtonContainer } from "./styled";
@@ -17,6 +19,9 @@ import projects from "./content.json";
 const Project = () => {
   const { id } = useParams();
   const project = projects[id];
+
+  if (!project) return <NotFound />;
+
   const {
     isCaseStudy,
     heroAlt,
@@ -33,9 +38,11 @@ const Project = () => {
 
   return (
     <Container>
-      <Helmet>
-        <title>{title} | MacKenzie Kerwin</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>{title} | MacKenzie Kerwin</title>
+        </Helmet>
+      </HelmetProvider>
       <Hero>
         <Col8>
           <img width="100%" alt={heroAlt} src={images[_.camelCase(id)].hero} />

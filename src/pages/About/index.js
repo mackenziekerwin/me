@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { Row, Col5, Col6 } from "../../theme/layout";
 import { H1 } from "../../theme/typography";
@@ -6,9 +6,11 @@ import { TallContainer, Bio } from "./styled";
 
 const About = () => (
   <TallContainer>
-    <Helmet>
-      <title>About | MacKenzie Kerwin</title>
-    </Helmet>
+    <HelmetProvider>
+      <Helmet>
+        <title>About | MacKenzie Kerwin</title>
+      </Helmet>
+    </HelmetProvider>
     <Row>
       <Col5 />
       <Col6>

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { Container } from "../../theme/layout";
 import { H1 } from "../../theme/typography";
@@ -10,9 +10,11 @@ import { ProjectRow } from "./styled";
 
 const Projects = () => (
   <Container>
-    <Helmet>
-      <title>Work | MacKenzie Kerwin</title>
-    </Helmet>
+    <HelmetProvider>
+      <Helmet>
+        <title>Work | MacKenzie Kerwin</title>
+      </Helmet>
+    </HelmetProvider>
     <H1>I made (or helped make) these!</H1>
     <ProjectRow>
       {projects.map((p, i) => (

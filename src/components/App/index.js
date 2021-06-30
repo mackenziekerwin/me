@@ -10,6 +10,7 @@ import Home from "../../pages/Home";
 import Projects from "../../pages/Projects";
 import About from "../../pages/About";
 import Project from "../../pages/Project";
+import NotFound from "../../pages/NotFound";
 
 import { StyledApp } from "./styled";
 
@@ -24,6 +25,7 @@ const App = () => (
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/about" component={About} />
         <Route exact path="/projects/:id" component={Project} />
+        <Route component={NotFound} />
       </Switch>
     </StyledApp>
     <Footer />

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { Container } from "../../theme/layout";
 import { H1 } from "../../theme/typography";
@@ -11,9 +11,11 @@ import Button from "../../components/Button";
 
 const Home = () => (
   <Container>
-    <Helmet>
-      <title>MacKenzie Kerwin</title>
-    </Helmet>
+    <HelmetProvider>
+      <Helmet>
+        <title>MacKenzie Kerwin</title>
+      </Helmet>
+    </HelmetProvider>
     <Hero>
       <H1>
         My name is MacKenzie Kerwin, and I am a web developer based in Boston,
