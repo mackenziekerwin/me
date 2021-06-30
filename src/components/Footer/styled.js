@@ -47,6 +47,7 @@ export const Links = styled(Col3)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
 
   @media (min-width: ${TABLET}) {
     flex-direction: row;
