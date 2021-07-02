@@ -143,6 +143,11 @@
     "dates": "September–December 2019",
     "description": "This single-page application is my take on a Google Doodle that would be displayed on the search engine for World Calligraphy day. It uses D3.js and stroke animations to simulate a calligraphy tutorial.",
     "role": "I was the sole designer and developer of the application.",
-    "tools": ["D3.js", "HTML", "CSS", "Adobe Illustrator"]
+    "tools": ["D3.js", "HTML", "CSS", "Adobe Illustrator"],
+    "cta": {
+      "text": "See the live site",
+      "src": "https://mkerwin-google-doodle.netlify.app/"
+    }
   }
+    
 }
