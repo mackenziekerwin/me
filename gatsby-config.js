@@ -29,5 +29,12 @@ module.exports = {
         customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [`Inter\:400,400i,700&text=→♥︎`, `Inter\:400,400i,700`],
+    //     display: 'swap',
+    //   },
+    // },
   ],
 };

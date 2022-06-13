@@ -2,20 +2,14 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Home from '../components/Home';
+import Work from '../components/Work';
 
-const IndexPage = () => {
+const WorkPage = () => {
   const query = useStaticQuery(graphql`
-    query HomepageQuery {
-      prismicHomepage {
+    query WorkPageQuery {
+      prismicWork {
         data {
-          intro {
-            text
-          }
           title {
-            text
-          }
-          work_label {
             text
           }
           projects {
@@ -24,12 +18,12 @@ const IndexPage = () => {
                 ... on PrismicProject {
                   uid
                   data {
-                    title {
-                      text
-                    }
                     thumbnail {
                       url
                       alt
+                    }
+                    title {
+                      text
                     }
                     summary {
                       text
@@ -38,9 +32,6 @@ const IndexPage = () => {
                 }
               }
             }
-            cta_label {
-              text
-            }
           }
         }
       }
@@ -48,21 +39,19 @@ const IndexPage = () => {
   `);
 
   const {
-    prismicHomepage: {
+    prismicWork: {
       data: {
-        intro: { text: intro },
         title: { text: title },
         projects,
-        work_label: { text: label },
       },
     },
   } = query;
 
   return (
-    <Layout title="MacKenzie Kerwin">
-      <Home intro={intro} title={title} projects={projects} label={label} />
+    <Layout title="Work | MacKenzie Kerwin">
+      <Work title={title} projects={projects} />
     </Layout>
   );
 };
 
-export default IndexPage;
+export default WorkPage;
